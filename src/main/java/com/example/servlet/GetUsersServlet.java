@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Set;
 
-@WebServlet("/users")
+@WebServlet(value = "/users",loadOnStartup = 0)
 public class GetUsersServlet extends HttpServlet {
 
     @Override
